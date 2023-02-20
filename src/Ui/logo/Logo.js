@@ -7,7 +7,7 @@ const Logo = () => {
 
         <div className={style.logo}>
             <img src={logo} alt='logo' className={style.logo__png}></img>
-            <span>Custom-PC</span>
+            <span>CUSTOM-PC</span>
         </div>
     )
 }

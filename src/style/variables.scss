@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,700&family=Oxanium:wght@500;600;700&display=swap');
 //fonts
 
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,700&family=Montserrat:wght@400;500;700;900&display=swap');
+
 $lato : "Lato",
 sans-serif;
+$mon :"Montserrat";
 //color
 $light: #dbe6ed;
 $light2: #efe9e6;
@@ -37,6 +41,7 @@ $boxShadow: 0 1px 1px rgba(0, 0, 0, 0.25), 0 2px 2px rgba(0, 0, 0, 0.2),
 
 // gradient 
 $grdient: linear-gradient(135deg, rgba(54, 33, 62, 1) 0%, rgba(54, 33, 62, 1) 65%, rgba(54, 33, 62, 1) 70%, rgba(255, 255, 255, 1) 70%, rgba(255, 255, 255, 1) 65%, rgba(255, 255, 255, 1) 100%);
+$mobBack: rgba(54, 33, 62, 1);
 
 
 

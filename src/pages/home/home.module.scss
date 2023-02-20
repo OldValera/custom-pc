@@ -2,20 +2,38 @@
 
 
 .homeWrapper {
-    max-width: 1024px;
-    width: 100%;
-    margin: auto;
 
+
+    @include breakpoint(md) {
+        max-width: 1024px;
+        width: 100%;
+        margin: auto;
+    }
+
+    // padding-left: 30px;
+
+    margin: auto;
 }
 
 .backGround {
-    background: $grdient;
+    background: $mobBack;
+
+    @include breakpoint(md) {
+        background: $grdient;
+    }
+
+
 }
 
 .home {
     display: flex;
-    align-items: center;
+    // align-items: center;
+    flex-direction: column;
 
+    @include breakpoint(md) {
+        flex-direction: row;
+        align-items: center;
+    }
 
 
 
@@ -24,17 +42,24 @@
         flex-direction: column;
         gap: 28px;
         color: white;
-        font-size: 22px;
+        font-size: 20px;
+        text-align: center;
+
+        @include breakpoint(md) {
+            font-size: 22px;
+            text-align: start;
+        }
+
 
         &__title {
-            font-size: 30px;
+            font-size: 25px;
             font-weight: 700;
         }
 
-        &__subTitle {}
+
 
         &__desc {
-            max-width: 500px;
+            // max-width: 500px;
             line-height: 1.8;
             margin-top: 25px;
         }
@@ -51,7 +76,7 @@
         &__btn {
             width: max-content;
             font-size: 18px;
-            padding: 20px 30px;
+            padding: 15px 25px;
             background-color: #fe9e16;
             color: white;
             border-radius: 10px;
@@ -63,12 +88,122 @@
             -moz-box-shadow: 4px 4px 25px 0px rgba(34, 60, 80, 0.2);
             box-shadow: 4px 4px 25px 0px rgba(34, 60, 80, 0.2);
             cursor: pointer;
-            margin-top: 20px;
+            // margin-top: 10px;
+
+            margin: auto;
+
+            @include breakpoint(md) {
+                margin: 0px;
+                padding: 20px 30px;
+            }
+
 
         }
 
     }
+}
 
+.headerImg {
+    display: none;
 
+    &__pc {
+        width: 450px;
+        height: 450px;
+    }
+
+    @include breakpoint(md) {
+        display: block;
+    }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .homeWrapper {
+//     max-width: 1024px;
+//     width: 100%;
+//     margin: auto;
+
+// }
+
+// .backGround {
+//     background: $grdient;
+// }
+
+// .home {
+//     display: flex;
+//     align-items: center;
+
+
+
+
+//     &__header {
+//         display: flex;
+//         flex-direction: column;
+//         gap: 28px;
+//         color: white;
+//         font-size: 22px;
+
+//         &__title {
+//             font-size: 30px;
+//             font-weight: 700;
+//         }
+
+//         &__subTitle {}
+
+//         &__desc {
+//             max-width: 500px;
+//             line-height: 1.8;
+//             margin-top: 25px;
+//         }
+
+//         h1 {
+//             color: $white;
+//         }
+
+//         button {
+//             width: max-content;
+//         }
+
+
+//         &__btn {
+//             width: max-content;
+//             font-size: 18px;
+//             padding: 20px 30px;
+//             background-color: #fe9e16;
+//             color: white;
+//             border-radius: 10px;
+//             border-color: black;
+//             border-style: solid;
+//             cursor: pointer;
+//             border: 1px;
+//             -webkit-box-shadow: 4px 4px 25px 0px rgba(34, 60, 80, 0.2);
+//             -moz-box-shadow: 4px 4px 25px 0px rgba(34, 60, 80, 0.2);
+//             box-shadow: 4px 4px 25px 0px rgba(34, 60, 80, 0.2);
+//             cursor: pointer;
+//             margin-top: 20px;
+
+//         }
+
+//     }
+// }
+
+// .headerImg {
+
+
+//     &__pc {
+//         width: 450px;
+//         height: 450px;
+//     }
+
+// }

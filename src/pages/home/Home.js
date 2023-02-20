@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import style from './home.module.scss';
 import Header from '../../components/header/Header';
+import pc from './../../components/assets/pc.png'
 
 const Home = () => {
     return (
@@ -14,8 +15,8 @@ const Home = () => {
                         <p className={style.home__header__desc}>Создай свой идеальный ПК – подбери совместимые комплектующие, периферию, подходящее ПО и закажи сборку!</p>
                         <button className={style.home__header__btn}>Собрать компьютер</button>
                     </div>
-                    <div>
-
+                    <div className={style.headerImg}>
+                        <img src={pc} alt="pcImg" className={style.headerImg__pc}></img>
                     </div>
                 </div>
             </div>
