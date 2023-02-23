@@ -1,0 +1,37 @@
+.Bg {
+    background: #faf8f8;
+}
+
+.userConf {
+    // margin-top: 60px;
+    max-width: 1024px;
+    margin: 0px auto;
+
+    &__wrapper {
+        display: flex;
+
+    }
+
+    &__pcItems {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__header {
+        &__title {
+            padding-top: 70px;
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+    }
+
+
+
+
+}
