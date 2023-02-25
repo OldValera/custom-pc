@@ -6,7 +6,7 @@ import { CgMenuRight, CgClose } from 'react-icons/cg'
 
 
 
-const Header = () => {
+const Header = (isModify) => {
 
     const [menuOpen, setMenuOpen] = useState(false);
     const handleMenuOpen = () => {

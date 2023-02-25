@@ -15,7 +15,6 @@
         padding-left: 0px;
     }
 
-
     &__menu {
         @include breakpoint(md) {
             display: none;
@@ -66,6 +65,8 @@
         }
     }
 
+}
 
-
+.modify {
+    background: $grdient;
 }

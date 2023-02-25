@@ -1,3 +1,5 @@
+@import './../../style/variables.scss';
+
 .Bg {
     background: #faf8f8;
 }
@@ -8,14 +10,69 @@
     margin: 0px auto;
 
     &__wrapper {
+        align-items: center;
         display: flex;
+        flex-direction: column;
 
+        button {
+            width: max-content;
+            font-size: 18px;
+            padding: 25px 25px;
+            background-color: #fe9e16;
+            color: white;
+            border-radius: 10px;
+            border-color: black;
+            border-style: solid;
+            cursor: pointer;
+            border: 1px;
+            -webkit-box-shadow: 4px 4px 25px 0px rgba(34, 60, 80, 0.2);
+            -moz-box-shadow: 4px 4px 25px 0px rgba(34, 60, 80, 0.2);
+            box-shadow: 4px 4px 25px 0px rgba(34, 60, 80, 0.2);
+            cursor: pointer;
+            margin-top: 10px;
+            align-items: center;
+            margin-top: 20px
+        }
     }
 
     &__pcItems {
-        display: flex;
-        flex-direction: column;
+
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 1px 16px;
+        grid-template-areas: ". .";
+
+
+
+
+        @include breakpoint(md-only) {
+            display: grid;
+            grid-auto-columns: 1fr;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            gap: 1px 16px;
+            grid-template-areas:
+                ".";
+        }
+
+        @include breakpoint(lg-only) {
+            display: grid;
+            grid-auto-columns: 1fr;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            gap: 1px 16px;
+            grid-template-areas:
+                ".";
+        }
+
     }
+
+
+
+
+
 
     &__header {
         &__title {
@@ -28,6 +85,7 @@
         p {
             margin-bottom: 15px;
             font-size: 20px;
+            line-height: 1.4;
         }
     }
 

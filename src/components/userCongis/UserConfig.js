@@ -12,8 +12,13 @@ const UserConfig = () => {
                     <div className={style.userConf__wrapper}>
                         <div className={style.userConf__pcItems}>
                             <UserConfItem />
+                            <UserConfItem />
+                            <UserConfItem />
+                            <UserConfItem />
                         </div>
+                        <button>Смотреть конфигурации</button>
                     </div>
+
                 </div>
             </div>
         </div>
