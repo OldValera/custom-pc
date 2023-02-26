@@ -1,6 +1,7 @@
 import React from 'react';
 import style from './userConfig.module.scss';
 import UserConfItem from '../userConfItem/UserConfItem.js';
+import { Link } from 'react-router-dom';
 
 const UserConfig = () => {
     return (
@@ -16,7 +17,10 @@ const UserConfig = () => {
                             <UserConfItem />
                             <UserConfItem />
                         </div>
-                        <button>Смотреть конфигурации</button>
+                        <Link to='/configs'>
+                            <button>Смотреть конфигурации</button>
+                        </Link>
+
                     </div>
 
                 </div>
